@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="reset-styles.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="header-style.css">
         <link rel="stylesheet" href="main-style.css">
@@ -11,14 +12,26 @@
     </head>
     <body>
         <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="header-top container">
-                <div class="menu">
-
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__buttons">
+                        <button class="header-top__button header-top__button--login">Войти</button>
+                        <button class="header-top__button header-top__button--new-ad">Новое объявление</button>
+                    </div>
                 </div>
             </div>
-            <div class="header-bottom container">
-                
+            <div class="header-bottom">
+                <div class="container">
+                    <h1 class="header-bottom__title">Доска объявлений</h1>
+                    <button class="header-bottom__categories">Все категории</button>
+                    <div class="header-bottom__search">
+                        <input type="text" class="header-bottom__search-input" placeholder="Поиск...">
+                        <button class="header-bottom__search-button">Найти</button>
+                    </div>
+                </div>
             </div>
+        </div>
+        </div>
         </div>
         <div class="main">
 
