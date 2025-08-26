@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="reset-styles.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="header-style.css">
-        <link rel="stylesheet" href="main-style.css">
+        <link rel="stylesheet" href="styles/reset-styles.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/header-style.css">
+        <link rel="stylesheet" href="styles/main-style.css">
         <title>Project</title>
     </head>
     <body>
-        <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <header class="header">
             <div class="header-top">
                 <div class="container">
                     <div class="header-top__buttons">
-                        <button class="header-top__button header-top__button--login"><img src="images/person.png">Войти</button>
+                        <button class="header-top__button header-top__button--login"><img src="images/person.png" class="header-top__button--login-img">Войти</button>
                         <button class="header-top__button header-top__button--new-ad">Новое объявление +</button>
                     </div>
                 </div>
@@ -23,18 +23,18 @@
             <div class="header-bottom">
                 <div class="container">
                     <h1 class="header-bottom__title">Доска объявлений</h1>
-                    <button class="header-bottom__categories"><img src="images/list-nested.png">Все категории</button>
+                    <button class="header-bottom__categories"><img src="images/list-nested.png" class="header-bottom__button--categories-img">Все категории</button>
                     <div class="header-bottom__search">
                         <input type="text" class="header-bottom__search-input" placeholder="Поиск...">
                         <button class="header-bottom__search-button">Найти</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <div class="main container">
             <h2 class="main__title">Рекомендации для вас</h2>
-            <div class="ads-grid">
-                <div class="ad-card">
+            <ul class="ads-grid">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/guitar.png" alt="Изображение">
                     </div>
@@ -44,9 +44,9 @@
                         <p class="ad-card__location">Москва</p>
                         <p class="ad-card__date">Сегодня: 14:12</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/mustang.png" alt="Изображение">
                     </div>
@@ -56,9 +56,9 @@
                         <p class="ad-card__location">Симферополь</p>
                         <p class="ad-card__date">Вчера 19:59</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/iphone.png" alt="Изображение">
                     </div>
@@ -68,9 +68,9 @@
                         <p class="ad-card__location">Севастополь</p>
                         <p class="ad-card__date">21 августа 10:03</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/coffee.png" alt="Изображение">
                     </div>
@@ -80,9 +80,9 @@
                         <p class="ad-card__location">Санкт-Петербург</p>
                         <p class="ad-card__date">Сегодня: 09:45</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/ps5.png" alt="Изображение">
                     </div>
@@ -92,9 +92,9 @@
                         <p class="ad-card__location">Казань</p>
                         <p class="ad-card__date">Сегодня: 11:30</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/samsung.png" alt="Изображение">
                     </div>
@@ -104,9 +104,9 @@
                         <p class="ad-card__location">Екатеринбург</p>
                         <p class="ad-card__date">Сегодня: 15:20</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/mac.png" alt="Изображение">
                     </div>
@@ -116,9 +116,9 @@
                         <p class="ad-card__location">Новосибирск</p>
                         <p class="ad-card__date">Вчера 21:15</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/rolex.png" alt="Изображение">
                     </div>
@@ -128,9 +128,9 @@
                         <p class="ad-card__location">Москва</p>
                         <p class="ad-card__date">Вчера 17:05</p>
                     </div>
-                </div>
+                </li>
 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/kawasaki.png" alt="Изображение">
                     </div>
@@ -140,9 +140,9 @@
                         <p class="ad-card__location">Ростов-на-Дону</p>
                         <p class="ad-card__date">21 августа 14:25</p>
                     </div>
-                </div>
+                </li>
 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/guitar.png" alt="Изображение">
                     </div>
@@ -152,9 +152,9 @@
                         <p class="ad-card__location">Москва</p>
                         <p class="ad-card__date">Сегодня: 14:12</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/mustang.png" alt="Изображение">
                     </div>
@@ -164,9 +164,9 @@
                         <p class="ad-card__location">Симферополь</p>
                         <p class="ad-card__date">Вчера 19:59</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/iphone.png" alt="Изображение">
                     </div>
@@ -176,9 +176,9 @@
                         <p class="ad-card__location">Севастополь</p>
                         <p class="ad-card__date">21 августа 10:03</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/coffee.png" alt="Изображение">
                     </div>
@@ -188,9 +188,9 @@
                         <p class="ad-card__location">Санкт-Петербург</p>
                         <p class="ad-card__date">Сегодня: 09:45</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/ps5.png" alt="Изображение">
                     </div>
@@ -200,9 +200,9 @@
                         <p class="ad-card__location">Казань</p>
                         <p class="ad-card__date">Сегодня: 11:30</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/samsung.png" alt="Изображение">
                     </div>
@@ -212,9 +212,9 @@
                         <p class="ad-card__location">Екатеринбург</p>
                         <p class="ad-card__date">Сегодня: 15:30</p>
                     </div>
-                </div>
+                </li>
                 
-                <div class="ad-card">
+                <li class="ad-card">
                     <div class="ad-card__image">
                         <img src="images/mac.png" alt="Изображение">
                     </div>
@@ -224,11 +224,8 @@
                         <p class="ad-card__location">Новосибирск</p>
                         <p class="ad-card__date">Вчера 21:15</p>
                     </div>
-                </div>
-
-            </div>
+                </li>
+            </ul>
         </div>
-        </div>
-    </div>
     </body>
 </html>

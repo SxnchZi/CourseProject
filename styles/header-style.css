@@ -1,4 +1,7 @@
 .header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #00000013;
     width: 100%;
@@ -91,6 +94,11 @@
 .header-bottom__categories::after {
     font-size: 10px;
     margin-left: 8px;
+}
+
+.header-bottom__categories:hover {
+    background-color: #007bff;
+    color: #fff
 }
 
 .header-bottom__search {
