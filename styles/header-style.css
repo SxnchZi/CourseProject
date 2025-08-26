@@ -2,20 +2,19 @@
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+    width: 100%;
+    flex-direction: column;
     background-color: #fff;
     border-bottom: 1px solid #00000013;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .header-top {
+    width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: flex-end;
+    border-bottom: 1px solid #eee;
     background-color: #1E293B;
-    width: 100%;
 }
 
 .header-top .container {
@@ -31,20 +30,26 @@
 .header-top__button {
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 14px;
-    transition: all 0.2s;
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 14px;
+    transition: all 0.2s;
 }
 
 .header-top__button--login {
-    color: #007bff;
+    color: #f0f8ff;
     background: #1E293B;
 }
 
 .header-top__button--login:hover {
-    color: #f0f8ff;
+    color: #007bff;
+}
+
+.header-top__button--login:hover svg {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    fill: #007bff;
 }
 
 .header-top__button--new-ad {
@@ -73,22 +78,22 @@
 }
 
 .header-bottom__title {
+    margin-right: auto;
     font-size: 24px;
     font-weight: bold;
-    margin-right: auto;
     color: #2c3e50;
 }
 
 .header-bottom__categories {
     padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f8f9fa;
     cursor: pointer;
-    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
 }
 
 .header-bottom__categories::after {
@@ -111,10 +116,10 @@
 .header-bottom__search-input {
     flex-grow: 1;
     padding: 10px 15px;
+    font-size: 14px;
     border: 1px solid #ddd;
     border-right: none;
     border-radius: 4px 0 0 4px;
-    font-size: 14px;
     outline: none;
 }
 
@@ -124,11 +129,14 @@
 
 .header-bottom__search-button {
     padding: 10px 15px;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
     background-color: #007bff;
     color: white;
     border-radius: 0 4px 4px 0;
-    font-size: 14px;
-    transition: background-color 0.2s;
 }
 
 .header-bottom__search-button:hover {
